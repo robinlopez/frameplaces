@@ -1,0 +1,54 @@
+// ~ FORMS
+// ====================================================================== >
+
+// ~ ==== Custom Input
+
+//=== Round Input
+
+.item-input {
+
+  //== Size Input
+
+  &.large-input {
+    height: 42px;
+  }
+
+  &.medium-input {
+    height: 38px;
+  }
+
+  //== Type Input
+
+  &.round-input {
+    border-radius: 50px !important;
+    border: none !important;
+  }
+
+  &.input-touch {
+
+    input {
+      background: url("../../img/svg/input-touch.svg") !important;
+      background-position:  95% center  !important;
+      background-size: 21px 21px !important;
+      background-repeat: no-repeat !important;
+      transition: 240ms;
+
+      &:focus {
+        transition: 240ms;
+        background: url("../../img/svg/input-touch-active.svg") !important;
+        background-position:  95% center  !important;
+        background-size: 21px 21px !important;
+        background-repeat: no-repeat !important;
+        transition: 240ms;
+      }
+    }
+  }
+
+  .placeholder-icon {
+    font-size: 24px !important;
+    margin-right: 14px !important;
+  }
+
+  //== Color Input
+
+}

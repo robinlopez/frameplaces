@@ -1,0 +1,71 @@
+// ~ BUTTONS
+// ====================================================================== >
+
+// ~ ==== Base btn
+
+// === Color
+
+.button-positive {
+  background: $primary-dark !important;
+}
+
+// ~ ==== Basic Button
+
+.button, a.button {
+  border-radius:50px 50px 50px 50px !important;
+  min-height: auto !important;
+
+  &.icon-right {
+    &:before {
+      padding-left: 8px !important;
+    }
+  }
+
+  &.small {
+    height: 38px;
+    line-height: 34px !important;
+
+    &:before {
+      line-height: 34px !important;
+    }
+  }
+}
+
+// ~ ==== Rounded Button
+
+.button-round, a.button-round {
+  border-radius: 100%!important;
+  min-width: auto !important;
+
+  &.small {
+    height: 38px !important;
+    width: 38px !important;
+    line-height: 36px !important;
+    font-size: 22px;
+
+    &:before {
+      position: absolute !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%,-50%) !important;
+    }
+  }
+}
+
+// ~ ==== Link Button
+
+.button, a.button {
+  &.button-clear {
+
+    &.button-light {
+      color: $white !important;
+    }
+
+    &.icon {
+      &:before {
+        margin-right: 5px !important;
+      }
+    }
+  }
+}
+

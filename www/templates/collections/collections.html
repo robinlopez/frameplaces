@@ -1,0 +1,42 @@
+<ion-view>
+  <!-- Header View - START !-->
+  <ion-nav-title>
+    Mes collections
+  </ion-nav-title>
+
+  <ion-nav-buttons side="right">
+    <a class="button button-positive button-round button-small ion-map" ui-sref="app.home"></a>
+  </ion-nav-buttons>
+  <!-- Header View - END !-->
+
+  <ion-content padding="true" class="has-header">
+
+  </ion-content>
+</ion-view>
+
+
+<ion-view>
+
+    <div class="bar bar-subheader">
+      <button id="collections-button7" class="button button-positive button-small icon-right ion-edit" ng-click="data.showDelete = !data.showDelete; data.showReorder = false">Editer</button>
+      <button id="collections-button6" class="button button-positive small icon-rightion-ios-plus-empty float-right"></button>
+    </div>
+    <ion-content padding="false" class="manual-remove-top-padding has-subheader">
+        <ion-list ng-controller="collectionCtrl"
+                  show-delete="shouldShowDelete"
+                  can-swipe="listCanSwipe">
+          <ion-item class="item-thumbnail-left"
+                    ui-sref="listeDesLieux.collectionsDTails">
+
+            <img>
+            <h2>Test</h2>
+            <p>Test</p>
+
+            <ion-delete-button class="ion-minus-circled"
+                               ng-click="items.splice($index, 1)">
+            </ion-delete-button>
+          </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

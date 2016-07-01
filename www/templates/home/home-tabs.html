@@ -1,0 +1,14 @@
+<ion-view ng-controller="homeCtrl">
+
+    <ion-tabs class="tabs-primary tabs-icon-only">
+        <ion-tab icon="ion-ios-search" href="#/app/search-places">
+            <ion-nav-view name="tab1"></ion-nav-view>
+        </ion-tab>
+        <ion-tab icon="ion-ios-plus-outline" ng-click="showActionsheet()" class="principal-action">
+            <ion-nav-view name="tab2"></ion-nav-view>
+        </ion-tab>
+        <ion-tab icon="ion-ios-photos-outline" href="#/app/collections" ui-sref="collections">
+            <ion-nav-view name="tab3"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

@@ -1,0 +1,39 @@
+<ion-view title="Login" hide-nav-bar="true" id="login">
+    <ion-content class="login" padding="true" class="manual-ios-statusbar-padding" scroll="false">
+        <div class="spacer" style="width: 285px; height: 80px;"></div>
+        <div>
+            <img src="img/svg/logo.svg" class="app-logo">
+        </div>
+        <div class="spacer" style="width: 285px; height: 80px;"></div>
+        <form class="list">
+            <ion-list>
+              <label class="item item-input round-input input-touch force-space-bottom-5" name="email">
+                <i class="icon ion-person placeholder-icon"></i>
+                <input type="text" placeholder="Identifiant">
+              </label>
+              <label class="item item-input round-input input-touch" name="password">
+                <i class="icon ion-lock-combination placeholder-icon"></i>
+                <input type="password" placeholder="Mot de passe">
+              </label>
+            </ion-list>
+            <div class="spacer" style="width: 285px; height: 29px;"></div>
+
+            <div class="row">
+              <div class="col-33">
+                <button class="button button-positive button-round small icon ion-help"></button>
+              </div>
+              <div class="col-67">
+                <a ui-sref="app.home"
+                   id="login-button5"
+                   class="button button-positive small icon-right ion-android-arrow-dropright-circle float-right">
+                  Se connecter
+                </a>
+              </div>
+            </div>
+
+            <a ui-sref="search-places" id="login-button2" class="button button-light button-block button-clear icon ion-android-add-circle">
+              Créer un nouveau compte
+            </a>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,90 @@
+// ~ TAB NAV
+// ====================================================================== >
+
+.tab-nav {
+  border: none !important;
+
+  &.tabs {
+    padding-top: 0 !important;
+
+    .tab-item {
+      border: none !important;
+    }
+  }
+}
+
+// Fix Style Colors Tabs
+
+
+.tabs-top {
+  &.tabs-primary {
+    &.transparent {
+      opacity: 0.8 !important;
+    }
+
+    .tabs {
+      .activated {
+        background: darken($primary, 15%) !important;
+
+        .icon {
+          transition: 120ms;
+          font-size: 29px !important;
+        }
+      }
+
+      .tab-item {
+        background: $primary;
+        color: $white;
+
+        .icon {
+          transition: 120ms;
+        }
+
+        &.principal-action {
+          opacity: 1;
+          background: #22649B;
+        }
+      }
+    }
+  }
+}
+
+.tabs-bottom {
+
+  &.tabs-primary {
+    .tabs {
+      .activated {
+        transition: 140ms;
+        background: darken($primary, 15%) !important;
+
+        .icon {
+          transition: 140ms;
+          font-size: 29px !important;
+        }
+      }
+
+      .tab-item {
+        transition: 140ms;
+        opacity: 1;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2288e6+0,3b9ee8+100 */
+        background: $primary; /* Old browsers */
+        background: -moz-linear-gradient(45deg,  $primary-dark 0%, $primary  100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg,  $primary-dark 0%,$primary  100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg,  $primary-dark 0%,$primary  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2288e6', endColorstr='#3b9ee8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        color: $white;
+
+        .icon {
+          transition: 140ms;
+        }
+
+        &.principal-action {
+          opacity: 1;
+          background: #22649B;
+        }
+      }
+    }
+  }
+}
+
+

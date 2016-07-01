@@ -1,0 +1,21 @@
+// ~ HEADER
+// ====================================================================== >
+
+// ~ ==== Custom Ion Header Bar
+
+.bar-header {
+
+  &.bar-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2288e6+0,3b9ee8+100 */
+    background: $primary; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  $primary-dark 0%, $primary  100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  $primary-dark 0%,$primary  100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  $primary-dark 0%,$primary  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2288e6', endColorstr='#3b9ee8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: $white;
+  }
+
+  .title {
+    font-weight: bold !important;
+  }
+}
