@@ -6,4 +6,23 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif !important;
+  color: $medium-grey;
 }
+
+// ===== TITLE
+
+// === Title Style
+
+.title {
+  font-weight: bold !important;
+}
+
+
+// ===== TEXT
+
+// === Text Color
+
+.medium-grey-text { color: $medium-grey;}
+.primary-text { color: $primary;}
+
+

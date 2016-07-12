@@ -163,3 +163,63 @@
 .inline {
   display: inline-block;
 }
+
+// ~ Margin helper
+$spacing-value : 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 15, 20, 25, 26, 30, 35, 40;
+
+@each $value in $spacing-value {
+  .space-top-#{$value} {
+    margin-top: #{$value/10}rem;
+  }
+  .space-right-#{$value} {
+    margin-right: #{$value/10}rem;
+  }
+  .space-bottom-#{$value} {
+    margin-bottom: #{$value/10}rem;
+  }
+  .space-left-#{$value} {
+    margin-left: #{$value/10}rem;
+  }
+  .force-space-top-#{$value} {
+    margin-top: #{$value/10}rem !important;
+  }
+  .force-space-right-#{$value} {
+    margin-right: #{$value/10}rem !important;
+  }
+  .force-space-bottom-#{$value} {
+    margin-bottom: #{$value/10}rem !important;
+  }
+  .force-space-left-#{$value} {
+    margin-left: #{$value/10}rem !important;
+  }
+}
+
+// ~ Padding helper
+$inner-spacing-value : $spacing-value;
+
+@each $value in $inner-spacing-value {
+  .inner-space-top-#{$value} {
+    padding-top: #{$value/10}rem;
+  }
+  .inner-space-right-#{$value} {
+    padding-right: #{$value/10}rem;
+  }
+  .inner-space-bottom-#{$value} {
+    padding-bottom: #{$value/10}rem;
+  }
+  .inner-space-left-#{$value} {
+    padding-left: #{$value/10}rem;
+  }
+  .force-inner-space-top-#{$value} {
+    padding-top: #{$value/10}rem !important;
+  }
+  .force-inner-space-right-#{$value} {
+    padding-right: #{$value/10}rem !important;
+  }
+  .force-inner-space-bottom-#{$value} {
+    padding-bottom: #{$value/10}rem !important;
+  }
+  .force-inner-space-left-#{$value} {
+    padding-left: #{$value/10}rem !important;
+  }
+}

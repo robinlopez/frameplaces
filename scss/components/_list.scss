@@ -1,0 +1,31 @@
+// ~ LIST
+// ====================================================================== >
+
+
+.list {
+
+  .item {
+    border: none;
+
+    &.item-thumbnail-left {
+      padding-left: 110px;
+    }
+  }
+
+  .img-item {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    max-width: 100px;
+    max-height: 100px;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
