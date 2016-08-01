@@ -1737,7 +1737,7 @@ body {
       border: none !important; }
 
 .tabs-top.tabs-primary.transparent {
-  opacity: 0.8 !important; }
+  background: #3b9ee8; }
 
 .tabs-top.tabs-primary .tabs .activated {
   background: #1777c0 !important; }
@@ -1749,7 +1749,8 @@ body {
   background: #3b9ee8;
   color: #ffffff; }
   .tabs-top.tabs-primary .tabs .tab-item .icon {
-    transition: 120ms; }
+    transition: 120ms;
+    font-size: 24px; }
   .tabs-top.tabs-primary .tabs .tab-item.principal-action {
     opacity: 1;
     background: #22649B; }
@@ -1777,7 +1778,8 @@ body {
   /* IE6-9 fallback on horizontal gradient */
   color: #ffffff; }
   .tabs-bottom.tabs-primary .tabs .tab-item .icon {
-    transition: 140ms; }
+    transition: 140ms;
+    font-size: 29px; }
   .tabs-bottom.tabs-primary .tabs .tab-item.principal-action {
     opacity: 1;
     background: #22649B; }
@@ -1845,6 +1847,129 @@ body {
 .list-places {
   background: url("../img/png/bg-list-street.png") no-repeat !important;
   background-size: 100%; }
+
+@font-face {
+  font-family: "frameplaces";
+  src: url("../fonts/frameplaces.eot");
+  src: url("../fonts/frameplaces.eot?#iefix") format("embedded-opentype"), url("../fonts/frameplaces.woff") format("woff"), url("../fonts/frameplaces.ttf") format("truetype"), url("../fonts/frameplaces.svg#frameplaces") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "frameplaces" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inherit;
+  font-family: "frameplaces" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-round-arrow-left:before {
+  content: "\61"; }
+
+.icon-user:before {
+  content: "\62"; }
+
+.icon-lock:before {
+  content: "\63"; }
+
+.icon-building:before {
+  content: "\64"; }
+
+.icon-campaign:before {
+  content: "\65"; }
+
+.icon-coast:before {
+  content: "\66"; }
+
+.icon-map:before {
+  content: "\67"; }
+
+.icon-list:before {
+  content: "\68"; }
+
+.icon-search:before {
+  content: "\69"; }
+
+.icon-add:before {
+  content: "\6a"; }
+
+.icon-user-list:before {
+  content: "\6b"; }
+
+.icon-wallet:before {
+  content: "\6c"; }
+
+.icon-forgot-password:before {
+  content: "\6d"; }
+
+.icon-edit:before {
+  content: "\6e"; }
+
+.icon-moon:before {
+  content: "\6f"; }
+
+.icon-sun:before {
+  content: "\70"; }
+
+.icon-wood:before {
+  content: "\71"; }
+
+.icon-mountain:before {
+  content: "\72"; }
+
+.icon-add-picture:before {
+  content: "\73"; }
+
+.icon-road:before {
+  content: "\74"; }
+
+.icon-angle-left:before {
+  content: "\75"; }
+
+.icon-add-library:before {
+  content: "\76"; }
+
+.icon-library:before {
+  content: "\77"; }
+
+.icon-eye:before {
+  content: "\78"; }
+
+.icon-location:before {
+  content: "\79"; }
+
+.icon-compass:before {
+  content: "\7a"; }
+
+.icon-delete:before {
+  content: "\41"; }
+
+.icon-cadrillage:before {
+  content: "\42"; }
+
+.icon-flash:before {
+  content: "\43"; }
+
+.icon-check:before {
+  content: "\44"; }
+
+.icon-refresh:before {
+  content: "\45"; }
 
 /*!
   Ionicons, v2.0.1

@@ -19,7 +19,7 @@
 .tabs-top {
   &.tabs-primary {
     &.transparent {
-      opacity: 0.8 !important;
+      background: $primary;
     }
 
     .tabs {
@@ -38,6 +38,7 @@
 
         .icon {
           transition: 120ms;
+          font-size: 24px;
         }
 
         &.principal-action {
@@ -76,6 +77,7 @@
 
         .icon {
           transition: 140ms;
+          font-size: 29px;
         }
 
         &.principal-action {
